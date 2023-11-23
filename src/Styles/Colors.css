@@ -1,0 +1,12 @@
+
+
+:root{
+    --parchment: 37 37% 52%;
+    --bg: 222 50% 90%;
+}
+:root[data-theme="light"]{
+
+    --bg: 100 50% 90%;
+    
+}
+

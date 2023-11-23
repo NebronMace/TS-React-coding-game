@@ -3,13 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import GameState from './GameLogic/GameState';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+const gameState= new GameState();
 root.render(
   <React.StrictMode>
-    <App />
+    <App inGameState={gameState}/>
   </React.StrictMode>
 );
 

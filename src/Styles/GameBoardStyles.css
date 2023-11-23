@@ -1,0 +1,85 @@
+@import "./Colors.css";
+
+._gameFrame {
+    display:flex;
+    height: 100%;
+    background-color: #282c34;
+}
+
+._textEditorFrame {
+    width: 25%;
+    height:100%;
+    min-width:375px;
+}
+
+._textEditorInnerFrame{
+    width: calc(100% - 6px);
+    height: 100%;
+    overflow:hidden;
+    display:flex;
+    margin-left:3px;
+}
+
+._textEditor {
+    width: 100%;
+    resize: none;
+}
+
+._boardContent {
+    width: 100%;
+    position:relative;
+    overflow:hidden;
+    min-width:400px;
+}  
+._landContent{
+    width: 15%;
+    position:relative;
+    overflow:hidden;
+    min-width:100px;
+}
+
+._boardContainer{
+    height:50%;
+    padding-left:4px;
+    padding-right:4px;
+    padding-top:4px;
+}
+
+._playerBoard {
+    height:97%;
+    background-color: hsl(var(--parchment));
+    border-radius:15px;
+    display:flex;
+    overflow-x: auto;
+}
+._landInfoContainer{
+    height:50%;
+    padding-left:4px;
+    padding-right:4px;
+    padding-top:4px;
+}
+._landInfo {
+    height:97%;
+    background-color: green;
+    border-radius:15px 0px 0px 15px;
+    display:flex;
+    overflow-x: auto;
+}
+
+._card{
+    background-color: hsl(var(--bg));
+    margin-left:4px;
+    margin-top:4px;
+    margin-right:4px;
+    margin-bottom:4px;
+    border-radius:25px;
+    min-width: 250px;
+    max-width:400px;
+    width:20%;
+    
+}
+._card._expandedCard {
+    min-width: 400px;
+    max-width:600px;
+    width:35%;
+}

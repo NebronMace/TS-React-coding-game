@@ -1,24 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import GameDisplay from './Components/GameDisplay';
+import TopBarMenu from './Components/TopBarMenu';
+import GameState from './GameLogic/GameState';
 
-function App() {
+interface appProps{ inGameState: GameState}
+
+function App(props:appProps) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="_outerFrame">
+      <TopBarMenu/>
+      <GameDisplay gameState={props.inGameState}/>
     </div>
   );
 }

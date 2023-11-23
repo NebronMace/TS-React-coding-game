@@ -1,0 +1,13 @@
+._topBarMenu{
+    height: 100;
+    color:black;
+    display: flex;
+    width:100%;
+}
+
+._outerFrame{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
