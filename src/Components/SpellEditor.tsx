@@ -3,7 +3,7 @@ function SpellEditor(){
 
     return (
     <div className="_textEditorInnerFrame">
-        <textarea className="_textEditor" autoFocus defaultValue="asdf"/>
+        <textarea className="_textEditor" autoFocus defaultValue="asdf" />
     </div>
     );
     

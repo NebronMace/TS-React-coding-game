@@ -15,6 +15,18 @@ class GameState{
     }
 
 
+    public doTimeUnit(){
+        const unitList = this.playerBoard.concat(this.enemyBoard);
+        for(const unit of unitList){
+            unit.runNextQueries();
+        }
+        for(const unit of unitList){
+            unit.runNextLocalEffects();
+        }
+        for(const unit of unitList){
+            unit.runNextEffects();
+        }
+    }
     /**
      * Adds a unit to a board.
      * @param unitToAdd The unit to add to the the board in question
